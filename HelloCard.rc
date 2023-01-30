@@ -1,0 +1,303 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About State Transaction Manager"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,72,50,14
+    CTEXT           "Static",IDC_PRODUCT,55,30,75,9
+    CTEXT           "Static",IDC_COMPANY,7,45,172,10
+    LTEXT           "Version",IDC_STATIC,62,60,28,9
+    LTEXT           "Static",IDC_VERSION,90,60,33,10
+    ICON            IDI_PHONE2,IDC_STATIC,81,8,16,16
+END
+
+IDD_SS7CHANNEL DIALOG  0, 0, 260, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "SS7 Time Slot Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",ID_SAVE,41,106,58,14
+    DEFPUSHBUTTON   "Cancel",ID_CANCEL,157,107,60,13
+    GROUPBOX        "Incomming TimeSlot",IDC_STATIC,13,31,108,64
+    EDITTEXT        IDC_SS7_INCOMMING_START,58,51,52,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SS7_INCOMMING_END,58,73,53,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Start",IDC_STATIC1,20,52,34,12,SS_CENTERIMAGE
+    LTEXT           "End",IDC_STATIC,21,71,35,14,SS_CENTERIMAGE
+    GROUPBOX        "Outgoing TimeSlot",IDC_STATIC,128,31,114,64
+    CTEXT           "Dialogic Board Configuration",IDC_STATIC,7,8,246,16,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_SS7_OUTGOING_START,173,49,52,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SS7_OUTGOING_END,173,71,53,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Start",IDC_STATIC2,135,50,34,12,SS_CENTERIMAGE
+    LTEXT           "End",IDC_STATIC,136,69,35,14,SS_CENTERIMAGE
+END
+
+IDD_RESETCHANNEL DIALOG  0, 0, 181, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Reset Channel "
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LINENUMBER,96,14,63,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "Reset",IDC_RESET,25,37,44,15
+    LTEXT           "Enter Channel Number",IDC_STATIC,10,15,78,12,
+                    SS_CENTERIMAGE
+    DEFPUSHBUTTON   "Cancel",ID_CANCEL,101,37,45,15
+END
+
+IDD_DATASOURCE DIALOG  0, 0, 187, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Data Base Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",ID_SAVE,24,102,50,14
+    DEFPUSHBUTTON   "Cancel",ID_CANCEL,96,102,50,14
+    LTEXT           "Data Source",IDC_STATIC,18,13,50,13,SS_CENTERIMAGE
+    LTEXT           "Catalog Name",IDC_STATIC,18,33,48,13,SS_CENTERIMAGE
+    LTEXT           "User Name",IDC_STATIC,19,55,47,14,SS_CENTERIMAGE
+    LTEXT           "Password",IDC_STATIC,19,76,48,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CATALOG,79,34,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USERID,79,56,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,79,76,77,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATASOURCE,79,13,78,13,ES_AUTOHSCROLL
+END
+
+IDD_AUTHENTICATE DIALOG  0, 0, 189, 98
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Hello Security"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_USERNAME,84,21,69,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,84,46,69,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,25,76,50,14
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,104,76,50,14
+    GROUPBOX        "User Input",IDC_STATIC,14,9,162,60,WS_DISABLED
+    LTEXT           "UserName",IDC_STATIC,21,23,51,13,SS_CENTERIMAGE
+    LTEXT           "Password",IDC_STATIC,22,47,49,12,SS_CENTERIMAGE
+END
+
+IDD_SERVER DIALOG  0, 0, 170, 109
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Local Server Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",ID_SAVE,17,81,50,14
+    DEFPUSHBUTTON   "Cancel",ID_CANCEL,92,81,50,14
+    LTEXT           "IP Address",IDC_IPADDRESS,15,16,45,13,SS_CENTERIMAGE
+    LTEXT           "Phrases",IDC_PHRASE,16,38,46,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_COMIPADDRESS,67,15,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHRASES,66,39,79,14,ES_AUTOHSCROLL
+    LTEXT           "Total Channels",IDC_CHANNEL,14,61,49,12
+    EDITTEXT        IDC_MAXCHANNEL,67,59,78,15,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SS7CHANNEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_RESETCHANNEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DATASOURCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_AUTHENTICATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PHONE2              ICON                    "PHONEON.ICO"
+IDI_PHONE1              ICON                    "PHONE13.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_HELLOMENU MENU 
+BEGIN
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "&Start\tCtrl+N",              ID_ACTION_START
+        MENUITEM "S&top\tCtrl+O",               ID_ACTION_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_ACTION_EXIT
+    END
+    POPUP "&Configuration"
+    BEGIN
+        MENUITEM "&SS7 Channel Settings\tCtrl+C", 
+                                                ID_CONFIGURATION_SS7_CHANNEL_SETTINS
+
+        MENUITEM "&R2 Time Slot Settings",      ID_CONFIGURATION_R2_CHANNEL_SETTINS
+        , GRAYED
+        MENUITEM "ISDN Time Slot Settings",     40020, GRAYED
+        MENUITEM "&DataBase Settings\tCtrl+D",  ID_CONFIGURATION_DATABASE_SETTINS
+
+        MENUITEM "Server Settings",             ID_CONFIGURATION_SERVERSETTINGS
+
+        MENUITEM SEPARATOR
+        MENUITEM "Remove Block",                ID_CONFIGURATION_REMOVEBLOCK
+        , GRAYED
+        MENUITEM "Channel &Reset\tCtrl+R",      ID_CONFIGURATION_CHANNEL_RESET
+
+        MENUITEM "CallingNumber\tCtrl+A",       ID_CONFIGURATION_CALLINGNUMBER
+        , GRAYED
+        MENUITEM "Reset All Channels",          ID_CONFIGURATION_CHANNEL_RESETALL
+        , GRAYED
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Test...",                     ID_HELP_TEST
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "S",            ID_ACCELERATOR40022,    VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "bitmap2.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
